@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mauro.yasts_test.com.example.mauro.yasts.fragmentDriver"
+    android:background="#09091a"
+    android:keepScreenOn="true"
+    android:screenOrientation="portrait">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/switch1" />
+
+    <Button
+        android:id="@+id/btn_accetta"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/acceptcall"
+        android:textColor="#fff"
+        android:layout_below="@+id/map"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_rifiuta"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rifiutacall"
+        android:textColor="#fff"
+        android:layout_alignBottom="@+id/btn_accetta"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/infoCorsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_accetta"
+        android:layout_below="@+id/btn_accetta"
+        android:layout_marginTop="19dp"
+        android:textColor="#fff" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Modalità notte"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

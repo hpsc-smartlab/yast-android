@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mauro.yasts_test.com.example.mauro.yasts.fragmentRider"
+    android:background="#09091a"
+    android:keepScreenOn="true"
+    android:screenOrientation="portrait"
+    >
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/modalitaNotte" />
+
+    <EditText
+        android:id="@+id/EditDestinazione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dove si va ? "
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:textColorLink="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button_vai" />
+
+    <Button
+        android:id="@+id/button_vai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/EditDestinazione"
+        android:layout_marginEnd="10dp"
+        android:text="Vai"
+        android:background="#070721"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/EditDestinazione"
+        android:layout_marginEnd="10dp"
+        android:text="Pulisci"
+        android:background="#070721"
+        android:textColor="#fff"
+        android:visibility="gone"/>
+
+    <Switch
+        android:id="@+id/modalitaNotte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modalità notte"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/fineCorsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#070721"
+        android:text="fine Corsa"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/EditDestinazione"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/dettaglioCorsa"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_vai"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+</RelativeLayout>
